@@ -11,7 +11,7 @@ def root():
     image = dic['url']
     explanation = dic['explanation']'''
 
-    ch = urllib2.urlopen("https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.labs.whatWouldMicahSay&access_token=fbe59e316c70d8ade63bd373dc268721&format=json")
+    ch = urllib2.urlopen("https://api.collection.cooperhewitt.org/rest/?method=cooperhewitt.labs.whatWouldMicahSay&access_token=&format=json")
     dic = json.loads(ch.read())
     micah = dic['micah']
     stat = dic['stat']
